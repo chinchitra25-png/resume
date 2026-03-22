@@ -8,65 +8,95 @@
 /* BODY */
 body {
   font-family: "Times New Roman", serif;
-  background: white;
-  color: black;
-  line-height: 1.7;
-  padding: 40px;
-  max-width: 800px;
+  background: #f8f8f8;
+  color: #111;
+  max-width: 750px;
   margin: auto;
+  padding: 60px 25px;
+  line-height: 1.8;
 }
 
 /* HEADER */
 header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 42px;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
 }
 
+/* SUBTEXT */
+header p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* BUTTON (MAJOR GLOW UP) */
+.contact-box {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.contact-box:hover {
+  background: #111;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 55px;
+}
+
+/* HEADINGS */
 h2 {
-  margin-top: 40px;
-  margin-bottom: 10px;
   font-size: 20px;
-  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* UNDERLINE STYLE */
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: black;
+  margin-top: 5px;
 }
 
 /* TEXT */
 p {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
+/* LISTS */
 ul {
   margin-left: 20px;
-  margin-bottom: 10px;
 }
 
-/* CONTACT BOX */
-.contact-box {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: 1px solid black;
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
-}
-
-.contact-box:hover {
-  background: black;
-  color: white;
+li {
+  margin-bottom: 8px;
 }
 
 /* LINKS */
 a {
   color: black;
+  text-decoration: underline;
 }
 
 /* FOOTER */
 footer {
-  margin-top: 40px;
   text-align: center;
+  margin-top: 60px;
+  color: #777;
   font-size: 14px;
 }
