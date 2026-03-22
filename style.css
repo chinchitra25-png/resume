@@ -8,8 +8,8 @@
 /* BODY */
 body {
   font-family: "Times New Roman", serif;
-  background: #f8f8f8;
-  color: #111;
+  background: #f5efe6;
+  color: #2c2c2c;
   max-width: 750px;
   margin: auto;
   padding: 60px 25px;
@@ -17,38 +17,55 @@ body {
 }
 
 /* HEADER */
-header {
+.top {
   margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d6ccc2;
 }
 
+/* FLEX HEADER */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* TITLE */
 h1 {
-  font-size: 42px;
+  font-size: 40px;
   margin-bottom: 15px;
-  letter-spacing: -0.5px;
 }
 
-/* SUBTEXT */
-header p {
-  color: #555;
-  margin-bottom: 8px;
+/* DETAILS */
+.details p {
+  color: #6b5e55;
+  margin-bottom: 5px;
 }
 
-/* BUTTON (MAJOR GLOW UP) */
+/* BUTTON */
 .contact-box {
   display: inline-block;
-  margin-top: 25px;
-  padding: 12px 28px;
-  border: 1px solid #111;
+  margin-top: 20px;
+  padding: 10px 24px;
+  border: 1px solid #2c2c2c;
   text-decoration: none;
-  color: #111;
-  transition: all 0.3s ease;
-  font-size: 15px;
+  color: #2c2c2c;
+  transition: 0.3s;
 }
 
 .contact-box:hover {
-  background: #111;
-  color: #fff;
-  transform: translateY(-2px);
+  background: #2c2c2c;
+  color: #f5efe6;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d6ccc2;
 }
 
 /* SECTIONS */
@@ -59,18 +76,29 @@ section {
 /* HEADINGS */
 h2 {
   font-size: 20px;
-  margin-bottom: 15px;
-  position: relative;
+  margin-bottom: 10px;
 }
 
-/* UNDERLINE STYLE */
 h2::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 35px;
   height: 2px;
-  background: black;
+  background: #a67c52;
   margin-top: 5px;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 /* TEXT */
@@ -78,25 +106,37 @@ p {
   margin-bottom: 12px;
 }
 
-/* LISTS */
+/* LIST */
 ul {
   margin-left: 20px;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 /* LINKS */
 a {
-  color: black;
-  text-decoration: underline;
+  color: #8c5a3c;
+  text-decoration: none;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   margin-top: 60px;
-  color: #777;
+  color: #7a6a5f;
   font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-img {
+    margin-top: 20px;
+  }
 }
